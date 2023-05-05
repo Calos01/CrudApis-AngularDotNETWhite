@@ -1,0 +1,14 @@
+.container{
+    margin: 1% 20%;
+    text-align: center;
+}
+.carder{
+    align-items: center;
+}
+.title{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px;
+    color: white;
+        
+}

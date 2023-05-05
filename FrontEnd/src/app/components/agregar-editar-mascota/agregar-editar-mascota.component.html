@@ -1,0 +1,48 @@
+<div class="title">
+  <h1 style="font-weight: bolder">{{titulo}} Mascota</h1>
+</div>
+<app-progressbar *ngIf="loading"></app-progressbar>
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="agregarEditarMascota()">
+    <mat-card class="card">
+      <mat-card-subtitle><h2>Ingresar Datos De Mascota</h2></mat-card-subtitle>
+      <mat-grid-list cols="2" rowHeight="100px">
+        <mat-grid-tile [colspan]="2">
+          <mat-form-field class="inputs-form">
+            <mat-label>Nombre</mat-label>
+            <input formControlName="nombre" matInput #message maxlength="256" autocomplete="off" />
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="inputs-form">
+            <mat-label>Edad</mat-label>
+            <input type="number" formControlName="edad" matInput #message maxlength="256" autocomplete="off" />
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="inputs-form">
+            <mat-label>Raza</mat-label>
+            <input formControlName="raza" matInput #message maxlength="256" autocomplete="off" />
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="inputs-form">
+            <mat-label>Color</mat-label>
+            <input formControlName="color" matInput #message maxlength="256" autocomplete="off" />
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="inputs-form">
+            <mat-label>Peso</mat-label>
+            <input type="number" formControlName="peso" matInput #message maxlength="256" autocomplete="off" />
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2">
+            <button class="but-volver" routerLink="/ListadoMascota" mat-raised-button>Volver</button>
+            <!-- deshabilita boton sino rellena todos los campos -->
+            <button [disabled]="form.invalid" type="submit" mat-raised-button color="primary">Aceptar</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card>
+  </form>
+</div>

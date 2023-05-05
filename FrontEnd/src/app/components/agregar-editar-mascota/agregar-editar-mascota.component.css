@@ -1,0 +1,20 @@
+.title{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px;
+    color: white;
+        
+}
+.container{
+    margin: 1% 20%;
+}
+.inputs-form{
+    width: 100%;
+    margin: 10px;
+}
+.card{
+    margin-top: 30px;
+}
+.but-volver{
+    margin-right: 10px;
+}

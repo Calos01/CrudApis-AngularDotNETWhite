@@ -1,0 +1,37 @@
+table {
+    width: 100%;
+}
+.title{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px;
+    color: white;
+        
+}
+.container{
+    margin: 1% 20%;
+}
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 15%;
+  }
+
+  .icosearch{
+    cursor:pointer;
+  }
+  .icoedit{
+    cursor: pointer;
+    color: blue;
+  }
+  .icodelete{
+    cursor: pointer;
+    color: red;
+  }
+  .butagregar{
+    padding: 10px;
+    font-size: small;
+  }
